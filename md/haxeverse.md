@@ -81,7 +81,7 @@ Using
 
 ### parsing svg path data ###
 
-### drawing curves, spiro and beziers ###
+### drawing curves, spiro and beziers with triangles ###
 
 ### fill approaches ###
 
