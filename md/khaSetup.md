@@ -9,7 +9,7 @@ https://github.com/Kode/KodeStudio/releases
 
 ![kode](https://github.com/nanjizal/haxeverse/blob/master/md/Kode.png)
 
-Then clone the Empty git project, it includes it's own version of Haxe.
+From terminal then clone the Empty git project, it includes it's own version of Kha and Haxe.
 
 ```
 git clone --recursive https://github.com/KTXSoftware/Empty.git
@@ -57,6 +57,48 @@ Submodule path 'Kha/Tools/khamake': checked out 'a1b504586edf53a0c490c5b2b8d7639
 Submodule path 'Kha/Tools/kravur': checked out '224bfe99eebe2fa7d30659ca8f0fc435f312d66d'
 Submodule path 'Kha/Tools/oggenc': checked out '07a44da6762fe4b26ac069e1dcee16c2ad23ae78'
 ```
-So if we open 'Kode Studio' and we drag our empty project onto it.
+So if we open 'Kode Studio' and we can drag our Empty project onto it, and clicking on the bug spider icon we can run.
 
+![empthykode](https://github.com/nanjizal/haxeverse/blob/master/md/emptyKode.png)
+
+Not very exciting we get a black window.
+
+Triangle is King
+----------------
+
+Kha has several graphics drawing/rendering modes
+
+- Graphics2 ( 2D ) 
+- Graphics4 ( 3D )
+- others...
+
+For 2D shapes we use Graphics2 and for 3D shapes we would use Graphics4.  To create any complex 2D shapes in Kha we can call the fillTriangle command, it just takes the x and y of each of the triangles corners.
+
+If we create a static function and pass Graphics2 from our render function we can draw a simple red Triangle.
+
+Lets create a new class "TriangleTest.hx" next to our other classes and add a static method for drawing a Red triangle:
+
+```
+package;
+import kha.graphics2.Graphics;
+import kha.Color;
+class TriangleTest{
+	inline static var red: Color = 0xFFFF0000;
+	public static inline function redTriangle( g2: Graphics ){
+		g2.begin();
+		g2.color =  red;
+		g2.fillTriangle( 100, 100, 
+                     200, 200,
+                     100, 300 );
+		g2.end();
+	}
+}
+```
+And then in our "Empty.hx" render method which already exists we can add a call the redTriangle static method, passing in the the Graphics2.
+
+```
+	function render(framebuffer: Framebuffer): Void {
+		TriangleTest.redTriangle( framebuffer.g2 );		
+	}
+ ```
 
