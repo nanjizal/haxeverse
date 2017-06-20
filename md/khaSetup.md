@@ -74,8 +74,6 @@ Kha has several graphics drawing/rendering modes
 
 For 2D shapes we use Graphics2 and for 3D shapes we would use Graphics4.  To create any complex 2D shapes in Kha we can call the fillTriangle command, it just takes the x and y of each of the triangles corners.
 
-If we create a static function and pass Graphics2 from our render function we can draw a simple red Triangle.
-
 Lets create a new class "TriangleTest.hx" next to our other classes and add a static method for drawing a Red triangle:
 
 ```
