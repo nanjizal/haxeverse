@@ -111,11 +111,12 @@ This just draws a red triangle every time the screen renders.
 
 Kha has some methods for drawing shapes but they are quite limited, but by breaking down your vector images into just triangles you can create more complex graphics that will render quite fast.
 
+Graphics2 hides a lot of the complexity so you can put 2D images and shapes on the screen easily.
+
 Graphics4 for 3D
 -----------------
 
-Graphics2 hides a lot of the complexity so you can put 2D images and shapes on the screen easily.
-For 3D, Kha exposes the shader pipeline of GPU rendering.
+For 3D, Kha exposes more of the low level shader pipeline of GPU rendering.
 
 
 
