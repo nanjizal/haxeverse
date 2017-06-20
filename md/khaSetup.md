@@ -76,7 +76,7 @@ For 2D shapes we use Graphics2 and for 3D shapes we would use Graphics4.  To cre
 
 Lets create a new class "TriangleTest.hx" next to our other classes and add a static method for drawing a Red triangle:
 
-```
+```haxe
 package;
 import kha.graphics2.Graphics;
 import kha.Color;
@@ -94,9 +94,13 @@ class TriangleTest{
 ```
 And then in our "Empty.hx" render method which already exists we can add a call the redTriangle static method, passing in the the Graphics2.
 
-```
+```haxe
 	function render(framebuffer: Framebuffer): Void {
 		TriangleTest.redTriangle( framebuffer.g2 );		
 	}
  ```
 
+This just draws a red triangle every time the screen renders.
+
+![red triangle](https://github.com/nanjizal/haxeverse/blob/master/md/redTriangle.png)
+ 
