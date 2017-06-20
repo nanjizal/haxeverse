@@ -57,3 +57,6 @@ Submodule path 'Kha/Tools/khamake': checked out 'a1b504586edf53a0c490c5b2b8d7639
 Submodule path 'Kha/Tools/kravur': checked out '224bfe99eebe2fa7d30659ca8f0fc435f312d66d'
 Submodule path 'Kha/Tools/oggenc': checked out '07a44da6762fe4b26ac069e1dcee16c2ad23ae78'
 ```
+So if we open 'Kode Studio' and we drag our empty project onto it.
+
+
