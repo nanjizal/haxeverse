@@ -13,6 +13,8 @@ Then clone the Empty git project, it includes it's own version of Haxe.
 
 ```
 git clone --recursive https://github.com/KTXSoftware/Empty.git
+```
+```
 git submodule foreach --recursive git pull origin master
 ```
 [(for other Kha workflows see the official documentation)](https://github.com/Kode/Kha/wiki/Getting-Started)
