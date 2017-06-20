@@ -1,13 +1,13 @@
 Kha Setup
 =========
 
+Make sure you have git and node (v6.0+) installed.
+
 Install Kode editor from github.
 
 https://github.com/Kode/KodeStudio/releases
 
 ![kode](https://github.com/nanjizal/haxeverse/blob/master/md/Kode.png)
-
-Make sure you have git and node (v6.0+) installed.
 
 Then clone the Empty git project, it includes it's own version of Haxe.
 
