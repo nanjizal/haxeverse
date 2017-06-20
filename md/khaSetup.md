@@ -74,8 +74,8 @@ Kha has several graphics drawing/rendering modes
 
 For 2D shapes we use Graphics2 and for 3D shapes we would use Graphics4.  
 
-Graphics 2 - 2D
----------------
+Graphics 2 for 2D
+-----------------
 
 To create any complex 2D shapes in Kha we can call the fillTriangle command to draw a triangle, it just takes the x and y of each of the triangles corners.
 
