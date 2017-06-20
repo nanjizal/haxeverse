@@ -72,14 +72,14 @@ Kha has several graphics drawing/rendering modes
 - Graphics4 ( 3D )
 - others...
 
-For 2D shapes we use Graphics2 and for 3D shapes we would use Graphics4.  
+For 2D shapes we use Graphics2, and for 3D shapes we would use Graphics4.  
 
 Graphics2 for 2D
 -----------------
 
 To create any complex 2D shapes in Kha we can call the fillTriangle command to draw a triangle, it just takes the x and y of each of the triangles corners.
 
-Lets create a new class "TriangleTest.hx" next to our other classes and add a static method for drawing a Red triangle:
+Lets create a new class "TriangleTest.hx" next to our other classes, and add a static method for drawing a Red triangle:
 
 ```haxe
 package;
@@ -97,7 +97,7 @@ class TriangleTest{
 	}
 }
 ```
-And then in our "Empty.hx" render method which already exists we can add a call to the redTriangle static method, passing in the the Graphics2.
+And then in our "Empty.hx" render method which already exists, we can add a call to the redTriangle static method, passing in the the Graphics2.
 
 ```haxe
 	function render(framebuffer: Framebuffer): Void {
@@ -105,7 +105,7 @@ And then in our "Empty.hx" render method which already exists we can add a call 
 	}
  ```
 
-This just draws a red triangle every time the screen renders.
+This code just draws a red triangle every time the screen renders.
 
 ![red triangle](https://github.com/nanjizal/haxeverse/blob/master/md/redTriangle.png)
 
