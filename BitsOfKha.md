@@ -53,7 +53,7 @@ Covers:
 - Mouse interaction
 - Basic use of spiro
 
-[hxSpiro and Kha](https://github.com/nanjizal/hxSpiroKhaG2/blob/master/Source/spiroHelpers/SpiroTriPathContext.hx
+[hxSpiro and Kha](https://github.com/nanjizal/hxSpiroKhaG2/blob/master/Source/spiroHelpers/CurveKha.hx)
 
 # JustTriangles
 
